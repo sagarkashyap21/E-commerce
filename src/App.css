@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+}
+html{
+    font-size: 62.5%;
+}
+.navbar{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between   ;
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    align-items: center;
+    /* background-color: rgb(238, 130, 91); */
+    background-color: black;
+    color: white;
+    height: 7rem;
+}
+.home,.cartlogo{
+    color: white;
+    text-decoration: none;
+}
+.nav1{
+    display: flex;
+    align-items: center;
+}
+.nav1 img{
+    height: 3;
+    width: 8rem;
+}
+.nav1d1{
+    margin-right: 5rem;
+}
+.product{
+    /* border:4px solid green; */
+    display: flex;
+    /* width: 100vw; */
+    height: 100%;
+    flex-wrap: wrap;
+    /* justify-content:center; */
+    justify-content: center;
+    padding: 5rem 0;
+}
+.card{
+    /* border:2px solid red; */
+    /* width: fit-content; */
+    margin: .5rem 2rem;
+    /* width: 25rem; */
+    max-width: 25rem;
+    /* height: 30rem; */
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem 0;
+    font-size: 2rem;
+    /* justify-content: center; */
+
+}
+.card img{
+    border-radius: 1rem;
+    height: 20rem;
+    width: 23rem;
+}
+.title{
+    /* border: 2px solid red; */
+    padding: .5rem 1rem;
+    text-align: center;
+}
+.addtocart{
+    /* border:2px solid black; */
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+}
+.price{
+    margin:.5rem 0;
+}
+.cart{
+    /* border:2px solid red; */
+    padding: 5rem 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.cartCard{
+    display: flex;
+    /* padding: 1rem 14rem; */
+    /* border: 2px solid green; */
+    width: 70vw;
+    margin: 1rem 0;
+}
+.cartCardd1 img{
+    height: 15rem;
+    width: 20rem;
+    border-radius: 1rem;
+}
+.cartCardd2{
+    font-size:2rem;
+    /* border:2px solid orange; */
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* line-height: 5rem; */
+}
+.remove{
+    color: white;
+    cursor: pointer;
+    background-color: red;
+    text-align: center;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+}
+div .total{
+    /* border:2px solid black; */
+    width: 70vw;
+    /* padding:5rem 1rem; */
+    /* padding-left: 14rem; */
+    padding-top: 1rem;
+    font-size: 3rem;
+    line-height: 2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media only screen and (max-width:887px) {
+    .card{
+        /* width: 24rem; */
+        margin: .5rem .3rem;
+    }
+}
+@media only screen and (max-width:511px) {
+    .card img {
+        height: 16rem;
+        width: 18rem;
+    }
+    .card{
+        width: 20rem;
+        min-height: 27rem;
+    }
+}
+@media only screen and (max-width:511px) {
+    .card img {
+        width: 13rem;
+    }
+    .card{
+        width: 16rem;
+    }
+}
+@media only screen and (max-width:511px) {
+    .cartCardd1 img {
+        height: 13rem;
+        width: 17rem;
+    }
+}
+@media only screen and (max-width:445px) {
+   .cartCardd2{
+       font-size: 1.5rem;
+       margin-left: 2rem;
+   }
+   .total{
+       font-size: 2rem;
+   }
+}
+@media only screen and (max-width:320px) {
+    .navbar{
+        font-size: 1.5rem;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
